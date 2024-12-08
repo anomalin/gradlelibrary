@@ -29,8 +29,8 @@ task(runbook, dependsOn: 'classes', type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
 }
 
-defaultTasks 'clean', 'compileJava', 'compileTestJava', 'test', 'javadoc', 'runbook'
+defaultTasks 'clean', 'compileJava', 'compileTestJava', 'test', 'javadoc', 'runbook', 'jar'
 
 task runDefaultTasks {
-    dependsOn 'clean', 'compileJava', 'compileTestJava', 'test', 'javadoc', 'runbook'
+    dependsOn 'clean', 'compileJava', 'compileTestJava', 'test', 'javadoc', 'runbook', 'jar'
 }
